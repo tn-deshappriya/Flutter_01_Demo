@@ -18,7 +18,19 @@ class BMICalculatorPageState extends State<BMICalculatorPage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text("BMI Calculator"),
+            Container(
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ElevatedButton(onPressed: () {}, child: Text("Male")),
+                      ElevatedButton(onPressed: () {}, child: Text("Female")),
+                    ],
+                  ),
+                ],
+              ),
+            ),
             ElevatedButton(onPressed: () {}, child: Text("Calculate BMI")),
           ],
         ),
